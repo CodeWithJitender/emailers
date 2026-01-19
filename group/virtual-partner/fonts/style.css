@@ -1,0 +1,74 @@
+/* --- Apple Garamond Family --- */
+
+/* Regular */
+@font-face {
+    font-family: 'Apple Garamond';
+    src: url('AppleGaramond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'Apple Garamond';
+    src: url('AppleGaramond-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Apple Garamond';
+    src: url('AppleGaramond-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Apple Garamond';
+    src: url('AppleGaramond-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Apple Garamond Light';
+    src: url('AppleGaramond-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+    font-family: 'Apple Garamond Light';
+    src: url('AppleGaramond-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* --- Bodera Family --- */
+
+/* Regular */
+@font-face {
+    font-family: 'Bodera';
+    src: url('bodera-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --- Usage Examples --- */
+
+/* body {
+    font-family: 'Apple Garamond', serif;
+}
+
+h1 {
+    font-family: 'Bodera', serif;
+    font-weight: normal;
+} */
+
+.light-text {
+    font-family: 'Apple Garamond Light', serif;
+}

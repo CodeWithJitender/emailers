@@ -1,145 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Virtual Partner Power Teams</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    table {
-      border-spacing: 0;
-    }
-    img {
-      display: block;
-      border: 0;
-      max-width: 100%;
-    }
-    a {
-      text-decoration: none;
-    }
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      background: #ffffff;
-    }
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      border-radius: 30px;
-      border: 1px solid #6a5acd;
-      color: #6a5acd;
-      font-weight: bold;
-    }
-    .gradient {
-      background: linear-gradient(90deg, #3b5bdc, #c24b88);
-      color: #ffffff;
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glocal LPO - Virtual Partner Bundle</title>
+    <!-- reset files  -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- font files  -->
+    <link rel="stylesheet" href="fonts/style.css" />
 
-<body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  <table width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td align="center">
+      body {
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
 
-        <table class="container" cellpadding="0" cellspacing="0">
+      .email-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+      }
 
-          <!-- HERO -->
-          <tr>
-            <td align="center" style="padding: 40px 30px 20px;">
-              <h1 style="margin: 0; font-size: 40px; font-weight: 700; line-height: 1.1;">
-                One<br>
-                <span style="font-size:48px;">Virtual Partner</span><br>
-                <span style="font-size:22px; font-weight: 400;">Three</span><br>
-                Power Teams
-              </h1>
-            </td>
-          </tr>
+      .header {
+        text-align: center;
+        padding: 60px 40px 40px;
+        background-color: #ffffff;
+      }
 
-          <!-- HERO IMAGE -->
-          <tr>
-            <td align="center" style="padding: 20px 30px;">
-              <img src="https://your-image-url-here.com/hero.jpg" alt="Virtual Partner Power Teams">
-            </td>
-          </tr>
+      .header h1 {
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 0;
+        letter-spacing: -1px;
+      }
 
-          <!-- SUBTEXT -->
-          <tr>
-            <td align="center" style="padding: 10px 40px 30px;">
-              <p style="font-size: 16px; line-height: 1.6; margin: 0;">
-                <strong>Virtual Receptionist + Virtual Paralegal + Virtual Accounting</strong>
-              </p>
-              <p style="font-size: 14px; line-height: 1.6; color: #555;">
-                Partner with Glocal LPO and unlock a <strong>3-day free trial of Glocal Assist</strong> and a
-                <strong>specially discounted 3-day paid trial of Glocal Accounting.</strong>
-              </p>
-            </td>
-          </tr>
+      .header .one,
+      .header .three {
+        font-size: 42px;
+        font-weight: 300;
+        display: block;
+        font-family: Bodera;
+      }
+      .header .three {
+        margin-top: 30px;
+      }
 
-          <!-- CTA -->
-          <tr>
-            <td align="center" style="padding-bottom: 40px;">
-              <a href="https://your-link-here.com" class="btn">
-                Unlock Your Bundle Offer →
-              </a>
-            </td>
-          </tr>
+      .header .virtual {
+        display: block;
+        font-family: Apple Garamond;
+        font-size: 109px;
+        line-height: 80px;
+        letter-spacing: 5px;
+      }
+      /* 
+      .header .partner {
+        display: block;
+        margin-bottom: 10px;
+        font-family: Apple Garamond;
+        font-size: 109px;
+      } */
 
-          <!-- SERVICES -->
-          <tr>
-            <td style="padding: 30px;">
-              <table width="100%" cellpadding="0" cellspacing="0">
-                <tr>
+      /* .header .three {
+            font-size: 28px;
+            font-weight: 300;
+            display: block;
+            margin-top: 10px;
+        } */
 
-                  <td width="33%" align="center" style="padding: 10px;">
-                    <strong>Glocal Assist</strong>
-                    <p style="font-size: 13px; color: #555;">
-                      A dedicated virtual front desk that manages calls while you focus on cases.
-                    </p>
-                  </td>
+      .header .power-teams {
+        font-size: 64px;
+        display: block;
+        font-family: Apple Garamond;
+        font-weight: 300;
+        letter-spacing: 3px;
+      }
 
-                  <td width="33%" align="center" style="padding: 10px;">
-                    <strong>Glocal LPO</strong>
-                    <p style="font-size: 13px; color: #555;">
-                      Expert legal support that works quietly behind your courtroom success.
-                    </p>
-                  </td>
+      .hero-image {
+        text-align: center;
+        padding: 20px 40px;
+      }
 
-                  <td width="33%" align="center" style="padding: 10px;">
-                    <strong>Glocal Accounting</strong>
-                    <p style="font-size: 13px; color: #555;">
-                      Smart accounting support that keeps your firm financially strong.
-                    </p>
-                  </td>
+      .hero-image img {
+        max-width: 100%;
+        height: auto;
+      }
 
-                </tr>
-              </table>
-            </td>
-          </tr>
+      .divider {
+        /* border-top: 1px solid #0134ff; */
+        margin: 30px 40px;
+      }
+      .divider img {
+        width: 100%;
+        height: auto;
+      }
 
-          <!-- BOTTOM CTA -->
-          <tr>
-            <td class="gradient" align="center" style="padding: 40px 30px;">
-              <h2 style="margin: 0 0 20px;">
-                Work smarter. Scale faster. Spend less.
-              </h2>
-              <a href="https://your-link-here.com" style="background:#ffffff;color:#333;padding:14px 30px;border-radius:30px;font-weight:bold;">
-                Unlock Your Bundle Offer →
-              </a>
-            </td>
-          </tr>
+      .subtitle {
+        text-align: center;
+        padding: 0 40px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #333;
+        letter-spacing: 0.5px;
+        font-family: "Bricolage Grotesque", sans-serif;
+      }
 
-        </table>
+      .description {
+        text-align: center;
+        padding: 0 60px 30px;
+        font-size: 12px;
+        line-height: 1.6;
+        color: #666;
+        font-family: "Bricolage Grotesque", sans-serif;
+      }
 
-      </td>
-    </tr>
-  </table>
+      .cta-button {
+        text-align: center;
+        padding: 20px 40px;
 
-</body>
+        font-family: "Bricolage Grotesque", sans-serif;
+      }
+
+      .cta-button a {
+        display: inline-block;
+        padding: 15px 40px;
+        font-family: Bricolage Grotesque;
+        /* 1. Use a transparent border to define the thickness */
+        border: 6px solid transparent;
+
+        /* 2. Set your border radius (this will work now) */
+        border-radius: 50px;
+
+        /* 3. The Logic: 
+     - The first gradient is your inner background (White)
+     - The second gradient is your border (Blue to Pink) 
+  */
+        background: linear-gradient(#ffffff, #ffffff) padding-box,
+          linear-gradient(135deg, #4363b2 0%, #a84578 100%) border-box;
+
+        color: #333;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        font-family: Arial, sans-serif;
+      }
+
+      /* .cta-button a:hover {
+        background-color: #333;
+        color: #ffffff;
+      } */
+
+      .arrow {
+        margin-left: 10px;
+        font-size: 18px;
+      }
+      .arrow img {
+        max-width: 30px;
+        width: 100%;
+        height: auto;
+      }
+      .service-wrapper {
+        width: 80%;
+        padding: 20px 0;
+        border: 1px solid #e0e0e0;
+        padding: 0px 30px 30px;
+        margin: 80px auto;
+        /* display: inline-block; */
+        border: 1px solid transparent;
+        border-radius: 50px;
+        background: linear-gradient(#ffffff, #ffffff) padding-box,
+          linear-gradient(180deg, #7079b780 0%, #ffffff00 100%) border-box;
+
+        color: #333;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        font-family: Arial, sans-serif;
+      }
+      .logo-section {
+        text-align: center;
+        /* padding: 40px 40px 30px; */
+        margin-bottom: 20px;
+      }
+
+      .logo-section img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        position: relative;
+        transform: translateY(-50%);
+      }
+
+      .services {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        border-radius: 8px;
+      }
+
+      .service-item {
+        flex: 1;
+        text-align: center;
+      }
+
+      .service-item img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .service-item p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: #666;
+        font-family: Bricolage Grotesque;
+        padding: 0 10px;
+      }
+
+      .footer-cta {
+        width: 80%;
+        margin: auto;
+        background: linear-gradient(90deg, #2c52aa 0%, #a22f67 100%);
+        padding: 0 10px 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        position: relative;
+        /* margin: 50px 0 40px; */
+        border-radius: 8px;
+      }
+
+      .bundle-badge {
+        position: relative;
+        top: -15px;
+        right: 10px;
+        font-weight: 600;
+        font-family: Arial, sans-serif;
+        text-align: end;
+      }
+
+      .footer-cta h2 {
+        color: #ffffff;
+        font-family: "Bricolage Grotesque";
+        font-size: 26px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-cta .cta-button a {
+        background-color: #ffffff;
+        color: #333;
+        border: none;
+        font-family: Bricolage Grotesque;
+      }
+
+      .footer-cta .cta-button a:hover {
+        background-color: #f0f0f0;
+      }
+
+      @media (max-width: 600px) {
+        .header h1 {
+          font-size: 48px;
+        }
+
+        .header .power-teams {
+          font-size: 36px;
+        }
+
+        .services {
+          flex-direction: column;
+        }
+
+        .footer-cta h2 {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="header">
+        <h1>
+          <span class="one">one</span>
+          <span class="virtual"
+            >Virtual <br />
+            partner</span
+          >
+          <!-- <span class="partner"></span> -->
+          <span class="three">three</span>
+          <span class="power-teams">Power Teams</span>
+        </h1>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/main.png"
+          alt="Legal Services"
+        />
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="subtitle">
+        Virtual Receptionist + Virtual Paralegal + Virtual Accounting
+      </div>
+
+      <div class="description">
+        Partner with Glocal LPO and unlock a 3-day free trial of Glocal
+        Assist<br />
+        and a specially discounted 3-day paid trial of Glocal Accounting.
+      </div>
+
+      <div class="cta-button">
+        <a href="#"
+          >Unlock Your Bundle Offer
+          <span class="arrow"><img src="image/arrow.png" alt="" /></span
+        ></a>
+      </div>
+
+      <div class="service-wrapper">
+        <div class="logo-section">
+          <img
+            src="https://codewithjitender.github.io/emailers/logo/logo-as.png"
+            alt="Glocal"
+          />
+        </div>
+
+        <div class="services">
+          <div class="service-item">
+            <img
+              src="https://codewithjitender.github.io/emailers/logo/logo-assist.png"
+              alt="Glocal Assist"
+            />
+            <p>
+              A dedicated virtual front desk that manages calls while you focus
+              on cases.
+            </p>
+          </div>
+          <div class="service-item">
+            <img
+              src="https://codewithjitender.github.io/emailers/logo/logo-lpo.png"
+              alt="Glocal LPO"
+            />
+            <p>
+              Expert legal support that works quietly behind your courtroom
+              success.
+            </p>
+          </div>
+          <div class="service-item">
+            <img
+              src="https://codewithjitender.github.io/emailers/logo/logo-rpo.png"
+              alt="Glocal Accounting"
+            />
+            <p>
+              Smart accounting support that keeps your firm financially strong.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="footer-cta">
+          <div class="bundle-badge"><img src="image/bundle-offer.png" alt=""></div>
+          <h2>Work smarter. Scale faster. Spend less</h2>
+          <div class="cta-button">
+            <a href="#"
+              >Unlock Your Bundle Offer
+              <span class="arrow"><img src="image/arrow.png" alt="" /></span
+            ></a>
+          </div>
+        </div>
+    </div>
+  </body>
 </html>
