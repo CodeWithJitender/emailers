@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -114,8 +114,8 @@
       .subtitle {
         text-align: center;
         padding: 0 40px 20px;
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 400;
         color: #333;
         letter-spacing: 0.5px;
         font-family: "Bricolage Grotesque", sans-serif;
@@ -126,7 +126,8 @@
         padding: 0 60px 30px;
         font-size: 12px;
         line-height: 1.6;
-        color: #666;
+        color: #000000;
+        font-weight: 300;
         font-family: "Bricolage Grotesque", sans-serif;
       }
 
@@ -142,7 +143,7 @@
         padding: 15px 40px;
         font-family: Bricolage Grotesque;
         /* 1. Use a transparent border to define the thickness */
-        border: 6px solid transparent;
+        border: 2px solid transparent;
 
         /* 2. Set your border radius (this will work now) */
         border-radius: 50px;
@@ -151,7 +152,8 @@
      - The first gradient is your inner background (White)
      - The second gradient is your border (Blue to Pink) 
   */
-        background: linear-gradient(#ffffff, #ffffff) padding-box,
+        background:
+          linear-gradient(#ffffff, #ffffff) padding-box,
           linear-gradient(135deg, #4363b2 0%, #a84578 100%) border-box;
 
         color: #333;
@@ -184,8 +186,9 @@
         margin: 80px auto;
         /* display: inline-block; */
         border: 1px solid transparent;
-        border-radius: 50px;
-        background: linear-gradient(#ffffff, #ffffff) padding-box,
+        border-radius: 10px;
+        background:
+          linear-gradient(#ffffff, #ffffff) padding-box,
           linear-gradient(180deg, #7079b780 0%, #ffffff00 100%) border-box;
 
         color: #333;
@@ -262,7 +265,7 @@
         font-family: "Bricolage Grotesque";
         font-size: 26px;
         font-weight: 300;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         letter-spacing: 0.5px;
       }
 
@@ -277,6 +280,26 @@
         background-color: #f0f0f0;
       }
 
+      .contact-info {
+        text-align: center;
+        padding: 0 0 20px 0;
+      }
+      .contact-info ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .contact-info ul li a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+        color: #333;
+        font-family: Bricolage Grotesque;
+        font-size: 14px;
+      }
       @media (max-width: 600px) {
         .header h1 {
           font-size: 48px;
@@ -292,6 +315,33 @@
 
         .footer-cta h2 {
           font-size: 24px;
+        }
+        .contact-info ul {
+          gap: 20px;
+        }
+        .header .virtual {
+          display: block;
+          font-family: Apple Garamond;
+          font-size: 85px;
+          line-height: 60px;
+          letter-spacing: 5px;
+        }
+        .cta-button a {
+          display: inline-block;
+          padding: 10px 20px;
+        }
+        .footer-cta .cta-button a {
+          background-color: #ffffff;
+          color: #333;
+          border: none;
+          font-family: Bricolage Grotesque;
+          font-size: 13px;
+        }
+        .bundle-badge {
+          top: -11px;
+        }
+        .bundle-badge img {
+          width: 70px;
         }
       }
     </style>
@@ -319,7 +369,11 @@
       </div>
 
       <div class="divider">
-        <img src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/line-one.png" class="line-one" alt="" />
+        <img
+          src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/line-one.png"
+          class="line-one"
+          alt=""
+        />
       </div>
 
       <div class="subtitle">
@@ -335,12 +389,19 @@
       <div class="cta-button">
         <a href="#"
           >Unlock Your Bundle Offer
-          <span class="arrow"><img src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/arrow.png" alt="" /></span
+          <span class="arrow"
+            ><img
+              src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/arrow.png"
+              alt="" /></span
         ></a>
       </div>
 
       <div class="divider">
-        <img src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/line-one.png" class="line-two" alt="" />
+        <img
+          src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/line-one.png"
+          class="line-two"
+          alt=""
+        />
       </div>
 
       <div class="service-wrapper">
@@ -385,15 +446,41 @@
       </div>
       <div class="footer-cta">
         <div class="bundle-badge">
-          <img src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/bundle-offer.png" alt="" />
+          <img
+            src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/bundle-offer.png"
+            alt=""
+          />
         </div>
-        <h2>Work smarter. Scale faster. Spend less</h2>
-        <div class="cta-button">
-          <a href="#"
-            >Unlock Your Bundle Offer
-            <span class="arrow"><img src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/arrow.png" alt="" /></span
-          ></a>
+        <div class="bundle-text">
+          <h2>Work smarter. Scale faster. Spend less</h2>
+          <div class="cta-button">
+            <a href="#"
+              >Unlock Your Bundle Offer
+              <span class="arrow"
+                ><img
+                  src="https://codewithjitender.github.io/emailers/group/virtual-partner/image/arrow.png"
+                  alt="" /></span
+            ></a>
+          </div>
         </div>
+      </div>
+      <div class="contact-info">
+        <ul>
+          <li>
+            <a href="https://www.glocallpo.com/" target="_blank"
+              ><img src="image/call.png" alt="" /><span
+                >https://www.glocallpo.com/</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="tel:+1(650)4072112" target="_blank"
+              ><img src="image/globe.png" alt="" /><span
+                >+1 (650) 407 2112</span
+              ></a
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </body>
